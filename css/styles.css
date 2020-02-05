@@ -1,4 +1,4 @@
-/*      
+/*
 
 
 */
@@ -7,6 +7,11 @@
 ---------------------------*/
 body {
     color: #343434;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-color: darkgray;   /* NEW STYLE FOR LESSON 04 */
 }
 
 img {
@@ -18,9 +23,15 @@ a  {
 }
 
 a:hover{
-    text-decoration:none;
+    text-decoration: none;
 }
 
+
+.content{
+    width: 850px;
+    margin: 0 auto;
+    padding: 15px; 0;  /* NEW STYLE FOR LESSON 04 */
+}
 
 
 /* Profile
