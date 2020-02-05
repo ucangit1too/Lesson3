@@ -30,7 +30,7 @@ a:hover{
 .content{
     width: 850px;
     margin: 0 auto;
-    padding: 15px; 0;  /* NEW STYLE FOR LESSON 04 */
+    padding: 15px, 0;  /* NEW STYLE FOR LESSON 04 */
 }
 
 
