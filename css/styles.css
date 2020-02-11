@@ -1,10 +1,18 @@
-/*
+/*      
 
 
 */
 
 /* Global styles
 ---------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
 body {
     color: #343434;
     max-width: 80%;
@@ -12,6 +20,9 @@ body {
     margin-right: auto;
     border-style: double;
     border-color: darkgray;   /* NEW STYLE FOR LESSON 04 */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
 }
 
 img {
@@ -26,6 +37,22 @@ a:hover{
     text-decoration: none;
 }
 
+h1 {
+    font-size: 100px;
+    line-height: 1;
+    text-shadow: 0 0 10px #c8c3cc;   /* NEW FOR LESSON 05 */
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h1, h2 {                                       /* NEW  STYLE FOR LESSON 05 */
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
 
 .content{
     width: 850px;
@@ -37,7 +64,7 @@ a:hover{
 /* Profile
 ---------------------------*/
 header{
-    background: #2F3061;
+    background: #563f46;           /* NEW COLOR FOR LESSON 05 */
     color: #F7FFF7;
 }
 
@@ -46,7 +73,7 @@ header{
 /* Projects
 ---------------------------*/
 .projects{
-    background: #F7FFF7;
+    background: #e0e2e4;
 }
 
 .projects a{
@@ -62,12 +89,22 @@ header{
 }
 
 
+.project-item {
+    overflow: hidden;   /* NEW FOR LESSON 05 */
+}
+
+
+.project-item img {     /* NEW FOR LESSON 05 */
+    float:left;
+    margin-right: 1em;
+}
+
 
 
 /* Work Experience
 ---------------------------*/
 .work-experience{
-    background: #A1C6D7;
+    background: #c6bcb6;     /* NEW COLOR FOR LESSON 05 */
 }
 
 
