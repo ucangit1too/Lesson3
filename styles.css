@@ -1,0 +1,125 @@
+/*      
+
+
+*/
+
+/* Global styles
+---------------------------*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    color: #343434;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border-color: darkgray;   /* NEW STYLE FOR LESSON 04 */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+ width: 600px;
+}
+
+a  {
+  color: #FFE66D;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 100px;
+    line-height: 1;
+    text-shadow: 0 0 10px #c8c3cc;   /* NEW FOR LESSON 05 */
+}
+
+h2 {
+    font-size: 42px;
+}
+
+h1, h2 {                                       /* NEW  STYLE FOR LESSON 05 */
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+.content{
+    width: 850px;
+    margin: 0 auto;
+    padding: 15px 0;  /* NEW STYLE FOR LESSON 04 */
+}
+
+
+/* Profile
+---------------------------*/
+header{
+    background: #563f46;           /* NEW COLOR FOR LESSON 05 */
+    color: #F7FFF7;
+}
+
+
+
+/* Projects
+---------------------------*/
+.projects{
+    background: #e0e2e4;
+}
+
+.projects a{
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.projects a:hover{
+    background: rgba(47,48,97,80%);
+}
+
+
+.project-item {
+    overflow: hidden;
+}
+
+
+.project-item img {
+    float:left;
+    margin-right: 1em;
+}
+
+
+
+/* Work Experience
+---------------------------*/
+.work-experience{
+    background: #c6bcb6;     /* NEW COLOR FOR LESSON 05 */
+}
+
+
+
+
+/* Education
+---------------------------*/
+
+
+
+
+
+/* Contact Info
+---------------------------*/
+footer{
+    background: #343434;
+    color: #F7FFF7;
+}
