@@ -18,12 +18,42 @@
         <p>
           Job Profile:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
         </p>
-          
+
         <p>
          Job Profile:  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum, diam ut gravida efficitur, risus neque scelerisque erat, ut rhoncus erat odio ac justo. Nunc scelerisque vestibulum augue, sit amet hendrerit ante.
         </p>
-        </div> 
+        </div>
       </header>
+
+      <div id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Web Design</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Logo Design</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Portofolio</a>
+                    <ul>
+                        <li><a href="#">Mockups</a></li>
+                        <li><a href="#">Touchups</a></li>
+                        <li><a href="#">Photoshop Quick Fixes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Me</a>
+                    <ul>
+                        <li><a href="#">Email</a></li>
+                        <li><a href="#">Social Media</a></li>
+                        <li><a href="#">Contact Form</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+      </div>
 
       <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
       <section class="project-item">
@@ -50,11 +80,14 @@
         <h2>Work Experience</h2>
         <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
 
-        <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Job title</h3>
-          <p>Company Name</p>
-          <p>Date at job</p>
+        <!-- JOB 1 -->
+        <section class="job-item">
+            <div class="job-details">
+              <h3>Job title</h3>
+              <p>Company Name</p>
+              <p>Date at job</p>
+           </div>
+        <div class="job-summary">
           <p>Job summary goes here. Add as many paragraphs as you need.</p>
           <p>Optional list:</p>
           <ul>
@@ -63,10 +96,31 @@
             <li>Lead...</li>
             <li>Responsible for...</li>
           </ul>
+        </div>
         </section>
-       </div>
-        <!-- End of Job block. -->
-      </section>
+  
+          
+        <!-- JOB 2 -->  
+        <section class="job-item">
+         <div class="job-details">
+           <h3>Job title</h3>
+           <p>Company Name</p>
+           <p>Date at job</p>
+         </div>
+        <div class="job-summary">
+          <p>Job summary goes here. Add as many paragraphs as you need.</p>
+          <p>Optional list:</p>
+          <ul>
+            <li>Delete this list if you don't need it.</li>
+            <li>Created...</li>
+            <li>Lead...</li>
+            <li>Responsible for...</li>
+          </ul>
+        </div>
+        </section>
+       </div>   <!-- End of Job block. -->
+          
+      </section> <!-- END WORK EXPERIENCE SECTION -->
 
       <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
       <section class="education">
@@ -85,17 +139,29 @@
 
       <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
       <footer>
-       <div class="content">
-        <h2>Let's Keep in Touch!</h2>
+        <h2>Contact Form</h2>
+       <div class="contact">
+          
 
         <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
-          <li><a href="mailto:email@example.com">email@example.com</a></li>
-          <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
-          <li><a href="#" target="_blank">Twitter</a></li>
-          <li><a href="#" target="_blank">LinkedIn</a></li>
-          <li><a href="#" target="_blank">Facebook</a></li>
-        </ul>
+        <form class="contact-list" method="post" action="">
+          <input type="text" id="fname" placeholder="First Name" name="fname">
+          <input type="text" id="lname" placeholder="Last Name" name="lname">
+          <input type="text" id="phone" placeholder="Phone" name="phone">
+          <input type="email" id="email" placeholder="Email" name="email">
+          <input type="text" id="subject" placeholder="Type Message Subject" name="subject">
+          <input type="textarea" id="message" placeholder="Type Message" name="message">
+          <select name="interest"  id="interest" placeholder="Interest">
+            <option value="choose">Select Desired Service</option>  
+            <option value="webdesign">Web Design</option>
+            <option value="graphicdesign">Graphic Design</option>
+            <option value="logodesign">Logo Design</option>
+            <option value="mockups">Mockups</option>
+            <option value="touchups">Touchups</option>
+            <option value="quickfixes">Photoshop Quick Fixes</option>
+          </select>
+          <input class="submit" type="submit" value="Submit Contact Form">
+        </form>
        </div>
       </footer>
     </main>

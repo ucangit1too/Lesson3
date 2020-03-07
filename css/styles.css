@@ -58,6 +58,7 @@ h1, h2 {                                       /* NEW  STYLE FOR LESSON 05 */
     width: 850px;
     margin: 0 auto;
     padding: 15px 0;  /* NEW STYLE FOR LESSON 04 */
+    overflow: auto;
 }
 
 
@@ -66,7 +67,81 @@ h1, h2 {                                       /* NEW  STYLE FOR LESSON 05 */
 header{
     background: #563f46;           /* NEW COLOR FOR LESSON 05 */
     color: #F7FFF7;
+    text-align: center;
+    overflow: auto;
 }
+
+
+/* Navigation
+---------------------------*/
+#navbar{
+    width= 100%;
+}
+
+
+nav{
+    text-align: center;  /* center the nav content */
+    font-weight: bold;
+    border: solid black;
+}
+
+
+nav a{
+    display: block;
+    padding: .25em;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+
+nav ul li{
+    position: relative;
+    display: inline-block;
+}
+
+
+ul li:hover{
+    background: lightgray;
+}
+
+
+ul li ul{
+    position:absolute;
+    left: -100000px;  /* position subm-menus off the screen */
+}
+
+
+ul li:hover ul{   /* displays sub-menus on-screen upon hover parent list items */
+    left: 0;
+}
+
+
+
+ul li ul li {       
+    display: block;   /* displays the sub-menu as a single block */
+    background: #c6bcb6;
+    width: 250px;
+    text-align: left;
+    
+}
+
+ul li ul li:hover{
+    border: solid .05em black;
+}
+
+
+ul li ul a{
+    font-size: 17px;
+}
+
+
+
+
 
 
 
@@ -90,11 +165,11 @@ header{
 
 
 .project-item {
-    overflow: hidden;   /* NEW FOR LESSON 05 */
+    overflow: auto;
 }
 
 
-.project-item img {     /* NEW FOR LESSON 05 */
+.project-item img {
     float:left;
     margin-right: 1em;
 }
@@ -105,14 +180,25 @@ header{
 ---------------------------*/
 .work-experience{
     background: #c6bcb6;     /* NEW COLOR FOR LESSON 05 */
+    overflow: auto;
 }
+
+.job-item{   /* This is the grid container for the Work Experience area */
+  display: grid;
+  grid-template-columns: 1fr 2fr;  /* fr makes it responsive; 2fr makes the 2nd column twice the size of the first column */
+  column-gap: 15px;
+    
+}
+
 
 
 
 
 /* Education
 ---------------------------*/
-
+.education{
+    overflow: auto;
+}
 
 
 
@@ -122,4 +208,82 @@ header{
 footer{
     background: #343434;
     color: #F7FFF7;
+    text-align: center;
+    overflow: auto;
+    padding: 1em;
 }
+
+
+form {
+    position:relative;
+    left: 700px;
+}
+
+.contact-list{
+    width: 600px;
+    padding: 0%;
+    display: flex;
+    flex-flow: row wrap;
+    border: solid #c6bcb6;
+    border-width: 10px;
+    justify-content: center;
+    
+}
+
+#fname{
+  flex: 1 0 500px;
+  text-align: left; 
+  margin: 1em;
+  border-radius: 3px;
+}
+
+#lname{
+  flex: 1 0 500px;
+  text-align: left; 
+  margin: 1em;
+  border-radius: 3px;
+}
+
+#phone{
+  flex: 1 0 500px;
+  text-align: left; 
+  margin: 1em; 
+  border-radius: 3px;
+}
+
+#email{
+  flex: 1 0 500px;
+  text-align: left; 
+  margin: 1em;
+  border-radius: 3px;
+}
+
+#subject{
+  flex: 1 0 500px;
+  text-align: left;
+  margin: 1em;
+  border-radius: 3px;
+}
+
+#message{
+  flex: 1 0 500px;
+  text-align: left;   
+  margin: 1em;
+  height: 50px;
+  border-radius: 3px;
+}
+
+
+
+#interest{
+  flex: 1 0 500px;
+  margin: 1em;
+}
+
+.submit{
+    flex 0 0 10px;
+    margin: 1em;
+    background-color: #563f46;
+    color: white;
+}
+
